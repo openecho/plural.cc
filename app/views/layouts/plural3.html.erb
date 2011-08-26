@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%= title %></title>
-	<%= render 'layouts/stylesheets' %>
-	<%= javascript_include_tag :defaults %>
-	<%= csrf_meta_tag %>
+<title><%= title %></title>
+<%= render 'layouts/stylesheets' %>
+<%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/dojo/1.6.0/dojo/dojo.xd.js' %>
+<%= csrf_meta_tag %>
 </head>
 <body>
-	<%= render 'layouts/sitebar' %>
-	<%= render 'layouts/header' %>
-	<div id="page">
-		<div id="pagebar">
-			<%= content_for?(:pagebar) ? yield(:pagebar) : render(:partial=>"layouts/default/pagebar") %>
-		</div>
-		<div id="content" class="middleBar">
-			<%= content_for?(:content) ? yield(:content) : yield %>
-		</div>
-		<div id="sidebar">
-			<%= content_for?(:sidebar) ? yield(:sidebar) : render(:partial=>"layouts/default/sidebar") %>
-		</div>	
+<%= render 'layouts/sitebar' %>
+<%= render 'layouts/header' %>
+<div id="page">
+	<div id="pagebar">
+		<%= content_for?(:pagebar) ? yield(:pagebar) : render(:partial=>"layouts/default/pagebar") %>
 	</div>
-	<%= render 'layouts/footer' %>
+	<div id="content" class="middleBar">
+		<%= content_for?(:content) ? yield(:content) : yield %>
+	</div>
+	<div id="sidebar">
+		<%= content_for?(:sidebar) ? yield(:sidebar) : render(:partial=>"layouts/default/sidebar") %>
+	</div>	
+</div>
+<%= render 'layouts/footer' %>
+<%= content_for?(:tracker) ? yield(:tracker) : render(:partial=>"layouts/default/tracker") %>
 </body>
 </html>

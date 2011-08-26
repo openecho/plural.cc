@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%= title %></title>
-	<%= render 'layouts/stylesheets' %>
-	<%= content_for?(:stylesheet) ? yield(:stylesheet) : "" %>
-	<%= content_for?(:javascript) ? yield(:javascript) : "" %>
-	<%= csrf_meta_tag %>
+<title><%= title %></title>
+<%= render 'layouts/stylesheets' %>
+<%= content_for?(:stylesheet) ? yield(:stylesheet) : "" %>
+<%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/dojo/1.6.0/dojo/dojo.xd.js' %>
+<%= content_for?(:javascript) ? yield(:javascript) : "" %>
+<%= csrf_meta_tag %>
 </head>
 <body>
-	<%= render 'layouts/sitebar' %>
-	<%= render 'layouts/header' %>
-	<div id="page">
-		<%= content_for?(:content) ? yield(:content) : yield %>	
-	</div>
-	<%= render 'layouts/footer' %>
+<%= render 'layouts/sitebar' %>
+<%= render 'layouts/header' %>
+<div id="page">
+	<%= content_for?(:content) ? yield(:content) : yield %>	
+</div>
+<%= render 'layouts/footer' %>
+<%= content_for?(:tracker) ? yield(:tracker) : render(:partial=>"layouts/default/tracker") %>
 </body>
 </html>

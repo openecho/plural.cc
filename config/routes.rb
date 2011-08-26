@@ -1,9 +1,10 @@
 PluralCc::Application.routes.draw do
 	get "pages/home"
 	
-	match '/pages/*id' => 'pages#show', :as => :page
+	root :to => "pages#home"
 	
-	root :to => 'pages#home'
+	match '/pages/*id' => 'pages#show', :as => :page
+	match '/secret/*id' => 'pages#show', :as => :page
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

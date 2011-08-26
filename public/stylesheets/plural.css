@@ -1,14 +1,3 @@
-/*
-	Dark Blue: 08265C
-	Light Blue: 86B2FF
-	Orange: FF3800
-	Brown: 691F13
-	Dark Green: 638F1A
-	Light Green: 7AA806
-	
-	grey: ECECEC
-*/
-
 
 body {
 	font-family: Arial, Sans-serif;
@@ -140,6 +129,7 @@ a:hover {
 	display: inline;
 }
 
+/*
 #appbar {
 	-moz-border-top-right-radius: 5px;
 	border-top-right-radius: 5px;
@@ -225,7 +215,7 @@ a:hover {
 	background-color: #F0F0F0;
 	border: 1px solid #FF3800;
 }
-
+*/
 #page {
 	margin-left: auto;
 	margin-right: auto;
