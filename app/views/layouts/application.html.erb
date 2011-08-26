@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<%= render 'layouts/stylesheets' %>
+	<%= content_for?(:stylesheet) ? yield(:stylesheet) : "" %>
+	<%= content_for?(:javascript) ? yield(:javascript) : "" %>
+	<%= csrf_meta_tag %>
+</head>
+<body>
+	<%= render 'layouts/sitebar' %>
+	<%= render 'layouts/header' %>
+	<div id="page">
+		<%= content_for?(:content) ? yield(:content) : yield %>	
+	</div>
+	<%= render 'layouts/footer' %>
+</body>
+</html>
