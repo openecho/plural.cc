@@ -129,30 +129,37 @@ a:hover {
 	display: inline;
 }
 
-/*
+
 #appbar {
+	position: relative;
+	z-index: 90;
+	float: right;
 	-moz-border-top-right-radius: 5px;
 	border-top-right-radius: 5px;
 	-moz-border-top-left-radius: 5px;
 	border-top-left-radius: 5px;
 	background-color: #223209;
 	color: #fff;
-	position: absolute; 
-	bottom: -1; 
-	right: 15px;
 	margin: 0;
 	padding: 0;	
 	border-top: 1px solid #FF3800;
 	border-left: 1px solid #FF3800;
-	border-right: 1px solid #FF3800;	
+	border-right: 1px solid #FF3800;
+	bottom: 5px;	
 }
 
 #appbar ul {
 	height: 30px;
+	position: relative;
+	z-index: 0;
 }
 
 #appbar li {
-	height: 20px;
+	position: relative;
+	float: left;
+
+
+	/*height: 20px;
 	font-size: 12px;
 	padding-top: 5px;
 	padding-right: 7px;
@@ -161,8 +168,9 @@ a:hover {
 	display:inline-block;
 	zoom:1;
 	*display:inline;
+	*/
 }
-
+/*
 #appbar li.first {
 	padding-left: 7px;
 }
