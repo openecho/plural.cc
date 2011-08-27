@@ -9,7 +9,7 @@
 			Enter <a href="http://plural.cc">plural.cc</a> and some decent tools. This site will host my source, run instances of my projects and host other peoples projects that are in their infancy where they are of interest to me.
 		</p>
 		<p>
-			I am yet to choose a <a href="http://en.wikipedia.org/wiki/Web_application_framework">web framework</a> or even a <a href="http://en.wikipedia.org/wiki/Programming_language">programming language</a> to implement any custom site functions. The likely options (in no specific order) are <a href="http://rubyonrails.org/">Ruby on Rails</a>, <a href="http://grails.org/">Grails</a> and <a href="http://cakephp.org">CakePHP</a>. My personal development preference is <a href="http://grails.org/">Grails</a> but its difficult to host. <a href="http://rubyonrails.org/">Ruby on Rails</a> is easy to host but is difficult to configure and I don't know <a href="http://www.ruby-lang.org/en/">Ruby</a>. <a href="http://cakephp.org">CakePHP</a> is very easy to host but I don't overly like <a href="http://www.php.net/">PHP</a>. 
+			I have decided on a <a href="http://en.wikipedia.org/wiki/Web_application_framework">web framework</a> (as of the 20110826). This site is currently built using <a href="http://rubyonrails.org/">Ruby on Rails</a> which has forced me to quickly pick up some <a href="http://www.ruby-lang.org/en/">Ruby</a>. <a href="https://github.com/openecho/plural.cc">The source for this page is hosted here</a>. <a href="http://cakephp.org">CakePHP</a> is closer than I realised to Rails so it has been a much eaiser transition than I expected. I am using <a href="http://dalibornasevic.com/posts/21-rvm-and-passenger-setup-for-rails-2-and-rails-3-apps">a hack based on rvm</a> to run a single instance of <a href="http://www.modrails.com/">Passenger</a> in Apache and concurrently host Rails 3.0 (plural.cc) and Rails 2.11 (projects.plural.cc). The downside is that I am stuck on Ruby 1.8.7 for everything (which is currently not an issue). I can now start figuring out implementations of the various bits of functionality I desire.
 		</p>
 		<p>
 			While I am figuring that out you can check out <a href="http://jsonij.plural.cc">JSONiJ</a> or do a bit of development on <a href="https://github.com/openecho/Kinetic3">Kinetic</a> with me.
@@ -19,6 +19,7 @@
 			The following is a summary of services currently running in the <a href="http://plural.cc">plural.cc</a> stack. I host solutions where I need to and reuse services where I can and it makes sense. <a href="http://www.google.com">Google</a> is quite core to the stack and it integrates well with my mobile phone.
 		</p>
 		<ul>
+			<li><a href="http://plural.cc">Main site</a> powered by <a href="http://rubyonrails.org">Ruby on Rails</a></li>
 			<li><a href="http://projects.plural.cc">Projects</a> powered by <a href="http://www.redmine.org">Redmine</a></li>
 			<li><a href="http://mail.plural.cc">Email</a> powered by <a href="http://www.gmail.com">Gmail</a></li>
 			<li><a href="http://blog.plural.cc">Blog</a> powered by <a href="http://www.blogger.com">Blogger</a></li>
