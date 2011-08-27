@@ -96,7 +96,7 @@ a:hover {
 	width: 1000px;
 	height: 70px;
 	position: relative;
-	
+	padding-right: 30px;
 }
 
 #header h1 {
@@ -112,11 +112,11 @@ a:hover {
 }
 
 #header h1 .second {
-		color: #FF3800;
+	color: #FF3800;
 }
 
 #header h1 .third {
-		color: #638F1A;
+	color: #638F1A;
 }
 
 #header h2 {
@@ -132,7 +132,6 @@ a:hover {
 
 #appbar {
 	position: relative;
-	z-index: 90;
 	float: right;
 	-moz-border-top-right-radius: 5px;
 	border-top-right-radius: 5px;
@@ -140,16 +139,27 @@ a:hover {
 	border-top-left-radius: 5px;
 	background-color: #223209;
 	color: #fff;
-	margin: 0;
-	padding: 0;	
 	border-top: 1px solid #FF3800;
 	border-left: 1px solid #FF3800;
 	border-right: 1px solid #FF3800;
-	bottom: 5px;	
+	font-size: 11px;
+	height: 25px;
+	padding-top: 1px;
 }
 
+#appbar span {
+	position: relative;
+	padding-right: 5px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+}
+
+#appbar span.first {
+	padding-left: 5px;
+}
+
+/*
 #appbar ul {
-	height: 30px;
 	position: relative;
 	z-index: 0;
 }
@@ -157,9 +167,7 @@ a:hover {
 #appbar li {
 	position: relative;
 	float: left;
-
-
-	/*height: 20px;
+	height: 20px;
 	font-size: 12px;
 	padding-top: 5px;
 	padding-right: 7px;
@@ -168,20 +176,25 @@ a:hover {
 	display:inline-block;
 	zoom:1;
 	*display:inline;
-	*/
+	
 }
-/*
+
 #appbar li.first {
 	padding-left: 7px;
 }
 
+#appbar div {
+	
+}
+
 #appbar label {
-	font-size: 12px;
 	padding-right: 5px;
 	color: #fff;
 }
-
+*/
 #appbar a {
+	position: relative;
+	text-decoration: none;
 	-moz-border-top-right-radius: 5px;
 	border-top-right-radius: 5px;
 	-moz-border-top-left-radius: 5px;
@@ -213,7 +226,6 @@ a:hover {
 	text-decoration: none; 
 }
 
-
 #appbar input {
 	background-color: #F0F0F0;
 	border: 1px solid #FF3800;
@@ -223,7 +235,7 @@ a:hover {
 	background-color: #F0F0F0;
 	border: 1px solid #FF3800;
 }
-*/
+
 #page {
 	margin-left: auto;
 	margin-right: auto;
