@@ -14,7 +14,7 @@
 		<%= content_for?(:pagebar) ? yield(:pagebar) : render(:partial=>"layouts/default/pagebar") %>
 	</div>
 	<div id="content" class="middleBar">
-		<%= content_for?(:content) ? yield(:content) : yield %>
+		<%= content_for?(:content) ? content_block(yield(:content)) : yield %>
 	</div>
 	<div id="sidebar">
 		<%= content_for?(:sidebar) ? yield(:sidebar) : render(:partial=>"layouts/default/sidebar") %>

@@ -12,7 +12,7 @@
 <%= render 'layouts/sitebar' %>
 <%= render 'layouts/header' %>
 <div id="page">
-	<%= content_for?(:content) ? yield(:content) : yield %>	
+	<%= content_for?(:content) ? content_block(yield(:content)) : yield %>	
 </div>
 <%= render 'layouts/footer' %>
 <%= content_for?(:tracker) ? yield(:tracker) : render(:partial=>"layouts/default/tracker") %>
