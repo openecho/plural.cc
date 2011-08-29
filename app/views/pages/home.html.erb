@@ -1,9 +1,7 @@
 <% content_for :content do %>
 h1. Meet plural.cc
 
-"plural.cc":http://plural.cc is the ongoing effort to create a single and managed location to host projects (specifically my projects). Like most developers, I start a lot of projects and I finish few (read <span style="font-family: 'Courier New', monospace">none ==&#x0B1;== ==&#x3B5;==</span>). In my version control nightmare I [accidently] revert versions, [accidently] loose features and [predictably] end up with code that does not makes sense.
-
-Enter "plural.cc":http://plural.cc and some decent tools. This site will host my source, run instances of my projects and host other peoples projects that are in their infancy where they are of interest to me.
+"plural.cc":http://plural.cc is the ongoing effort to create a single and managed location to host projects (specifically my projects). This site hosts my source code, run instances of my projects and host other peoples projects that are in their infancy where they are of interest to me.
 
 I have decided on a "web framework":http://en.wikipedia.org/wiki/Web_application_framework (as of the 20110826). This site is currently built using "Ruby on Rails":http://rubyonrails.org/ which has forced me to quickly pick up some "Ruby":http://www.ruby-lang.org/en/. The content markup is being done by the awesome "RedCloth":http://redcloth.org/faq textile package. "CakePHP":http://cakephp.org and "Grails":http://grails.org/ are closer than I realised to Rails making it an easy transistion. I am using "a hack based on rvm":http://dalibornasevic.com/posts/21-rvm-and-passenger-setup-for-rails-2-and-rails-3-apps to run a single instance of "Passenger":http://www.modrails.com/ in Apache and concurrently host Rails 3.0 (plural.cc) and Rails 2.11 (projects.plural.cc). The downside is that I am stuck on Ruby 1.8.7 for everything (which is currently not an issue). I can now start figuring out implementations of the various bits of functionality I desire.
 
@@ -18,6 +16,7 @@ The following is a summary of services currently running in the "plural.cc":http
 * "Email":http://mail.plural.cc powered by "Gmail":http://www.gmail.com
 * "Blog":http://blog.plural.cc powered by "Blogger":http://www.blogger.com
 * "Documents":http://docs.plural.cc powered by "Google Docs":http://docs.google.com
+* "Gallery":http://gallery.plural.cc powered by "Balder":http://balderapp.com/
 * Directory Services powered by "OpenLDAP":http://www.openldap.org
 
 h1. Network with Me
