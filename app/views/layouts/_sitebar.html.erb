@@ -1,11 +1,26 @@
+<%= javascript_tag do -%>
+	dojo.xhrGet({
+	    url:"/site/bar",
+	    handleAs:"json",
+	    load: function(data){
+	    	var menu = dojo.byId('menu'); 
+	    	dojo.forEach(data, function(entry, i) {
+	    		var item = dojo.create('li', {}, menu, 'last');
+	    		var span = dojo.create('span', {}, item);
+	    		var link = dojo.create('a',{style: "opacity: 0", href: entry.url, innerHTML: entry.page}, span);
+	    		var fadeArgs = {
+	    			node: link,
+	    			duration: 500
+	    		}
+	    		dojo.fadeIn(fadeArgs).play();
+	    	});
+	    	
+	    }
+	});
+<% end -%>
 <div id="sitebar">
-	<div id="menu">
-		<ul>
-			<li><span><a href="http://plural.cc">Home</a></span></li>
-			<li><span><a href="http://projects.plural.cc">Projects</a></span></li>
-			<li><span><a href="http://gallery.plural.cc">Gallery</a></span></li>
-			<li><span><a href="http://blog.plural.cc">Blog</a></span></li>
-			<li><span><a href="http://mail.plural.cc">Mail</a></span></li>
+	<div>
+		<ul id="menu">
 		</ul>
 	</div>
 	<div id="options">

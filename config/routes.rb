@@ -1,5 +1,6 @@
 PluralCc::Application.routes.draw do
 	get "pages/home"
+	get "site/bar"
 	
 	root :to => "pages#home"
 	
