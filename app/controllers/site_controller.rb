@@ -14,7 +14,7 @@ class SiteController < ApplicationController
 	def bar
 		respond_to do |format|
 			format.html { render :json => site_bar }
-			format.json { render :json => site_bar }
+			format.json { render :json => site_bar, :callback => params[:callback] }
 		end
 		
 	end
