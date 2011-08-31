@@ -1,6 +1,6 @@
 <%= javascript_tag do -%>
 	dojo.xhrGet({
-	    url:"/site/bar",
+	    url:"http://plural.cc/site/bar",
 	    handleAs:"json",
 	    load: function(data){
 	    	var menu = dojo.byId('menu'); 
@@ -8,11 +8,7 @@
 	    		var item = dojo.create('li', {}, menu, 'last');
 	    		var span = dojo.create('span', {}, item);
 	    		var link = dojo.create('a',{style: "opacity: 0", href: entry.url, innerHTML: entry.page}, span);
-	    		var fadeArgs = {
-	    			node: link,
-	    			duration: 500
-	    		}
-	    		dojo.fadeIn(fadeArgs).play();
+	    		dojo.fadeIn({node: link}).play();
 	    	});
 	    	
 	    }
@@ -23,9 +19,8 @@
 		<ul id="menu">
 		</ul>
 	</div>
-	<div id="options">
-		<ul style="display: none">
-			<li><a href="#">Login</a></li>
+	<div>
+		<ul id="actions">
 		</ul>
 	</div>
 </div>
