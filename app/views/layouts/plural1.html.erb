@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title><%= title %></title>
+<title><%= content_for?(:title) ? yield(:title) : title %></title>
+<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Plural.cc Page" %>" />
+<meta name="keywords" content="<%= content_for?(:keywords) ? yield(:keywords) : "plural" %>" />
+<meta name="author" content="jmarsden" />
+<meta charset="UTF-8" />
 <%= render 'layouts/stylesheets' %>
 <%= content_for?(:stylesheet) ? yield(:stylesheet) : "" %>
 <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/dojo/1.6.0/dojo/dojo.xd.js' %>
