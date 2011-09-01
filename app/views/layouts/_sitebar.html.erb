@@ -1,19 +1,22 @@
 <%= javascript_tag do -%>
+dojo.require("dojo.io.script");
 dojo.ready(function() {
-	dojo.xhrGet({
-	    url:"http://plural.cc/site/bar.json",
-	    handleAs:"json",
-	    load: function(data){
-	    	var menu = dojo.byId('menu'); 
-	    	dojo.forEach(data, function(entry, i) {
-	    		var item = dojo.create('li', {}, menu, 'last');
-	    		var span = dojo.create('span', {}, item);
-	    		var link = dojo.create('a',{style: "opacity: 0", href: entry.url, innerHTML: entry.page}, span);
-	    		dojo.fadeIn({node: link}).play();
-	    	});
-	    	
-	    }
-	});
+  dojo.io.script.get({
+	url: "http://plural.cc/site/bar.json",
+	callbackParamName: "callback",
+	content: {
+		page: "gallery"
+	},
+	load: function(data) {
+		var menu = dojo.byId('menu');
+		dojo.forEach(data, function(entry, i) {
+				var item = dojo.create('li', {}, menu, 'last');
+				var span = dojo.create('span', {}, item);
+				var link = dojo.create('a',{style: "opacity: 0", href: entry.url, innerHTML: entry.page}, span);
+				dojo.fadeIn({node: link}).play();
+		});
+	}
+  });
 });
 <% end -%>
 <div id="sitebar">
