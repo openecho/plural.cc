@@ -1,6 +1,7 @@
 <%= javascript_tag do -%>
+dojo.ready(function() {
 	dojo.xhrGet({
-	    url:"http://plural.cc/site/bar",
+	    url:"http://plural.cc/site/bar.json",
 	    handleAs:"json",
 	    load: function(data){
 	    	var menu = dojo.byId('menu'); 
@@ -13,6 +14,7 @@
 	    	
 	    }
 	});
+});
 <% end -%>
 <div id="sitebar">
 	<div>
