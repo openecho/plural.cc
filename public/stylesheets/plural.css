@@ -26,6 +26,7 @@ a:hover {
 	background-color: #223209;
 	position: relative;
 	height: 20px;
+	min-width:1000px;
 }
 
 #sitebar ul {
@@ -79,11 +80,13 @@ a:hover {
 #headerback {
 	background-color: #F0F0F0;
 	border-bottom: 2px solid #A01B00;	
+	min-width:1000px;
 }
 
 #headerborder {
 	border-top: 2px solid #FF3800;
 	border-bottom: 1px solid #FF3800;
+	min-width:1000px;
 }
 
 .middle {
@@ -97,6 +100,7 @@ a:hover {
 	width: 1000px;
 	height: 70px;
 	position: relative;
+	min-width:1000px;
 }
 
 #header h1 {
