@@ -12,7 +12,8 @@ dojo.ready(function() {
 		dojo.forEach(data, function(entry, i) {
 				var item = dojo.create('li', {}, menu, 'last');
 				var span = dojo.create('span', {}, item);
-				var link = dojo.create('a',{style: "opacity: 0", href: entry.url, innerHTML: entry.page}, span);
+				var link = dojo.create('a',{href: entry.url, innerHTML: entry.page}, span);
+				dojo.style(link, "opacity", "0");
 				dojo.fadeIn({node: link}).play();
 		});
 	}
