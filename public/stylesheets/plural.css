@@ -26,7 +26,7 @@ a:hover {
 	background-color: #223209;
 	position: relative;
 	height: 20px;
-	min-width:1000px;
+	min-width:1024px;
 }
 
 #sitebar ul {
@@ -80,27 +80,27 @@ a:hover {
 #headerback {
 	background-color: #F0F0F0;
 	border-bottom: 2px solid #A01B00;	
-	min-width:1000px;
+	min-width:1024px;
 }
 
 #headerborder {
 	border-top: 2px solid #FF3800;
 	border-bottom: 1px solid #FF3800;
-	min-width:1000px;
+	min-width:1024px;
 }
 
 .middle {
 	text-align: center;
-	width: 1000px;
+	width: 1024px;
 }
 
 #header {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	width: 1024px;
 	height: 70px;
 	position: relative;
-	min-width:1000px;
+	min-width:1024px;
 }
 
 #header h1 {
@@ -243,7 +243,7 @@ a:hover {
 #page {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	width: 1024px;
 	line-height: 1.1;
 }
 /*
