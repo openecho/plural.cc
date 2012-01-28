@@ -1,0 +1,31 @@
+<% content_for :title do %>plural.cc - Mozaic Test 001<% end %>
+<% content_for :description do %>Mozaic Tile Engine Java Test 001<% end %>
+<% content_for :keywords do %>plural,Java,Mozaic,Tile Engine<% end %>
+<% content_for :heading do %>Mozaic Test 1<% end %>
+<% content_for :content do %>
+        <div class="pad">
+                <div class="info">
+			The first of the Mozaics! Mozaic is the project name for the tile engine that I am working on. This version obviously a Java Applet and this specific instance is a test of the render speed of my scheduler and active rendering. The same applet running on this screen is wrapped in a JFrame that you can download from <a href="/applets/mozaic-0.0.1-SNAPSHOT.jar">here</a> and run. Happy Rendering.
+                </div>
+		<div id="canvas">
+<notextile>
+<applet code="cc.plural.run.Applet.class" 
+	archive="/applets/mozaic-0.0.1-SNAPSHOT.jar"
+	width=960 height=600>
+	<param name=page value="mozaic001">
+</applet>
+</notextile>
+		</div>
+
+h1. Notes for this page
+
+This is the finish of render test 1 - I know it has some issues in that applet on scrolling and moving the browser around but they are just me being lazy (the render buffer is a buffered image and it can be recycled any time - I should create it every render loop);
+
+* I am using the Fast Mersenne Twister Implementation. You can find the software on the authors page <a href="http://www-stat.stanford.edu/~naras/programs/">here</a> and its licence is in its header.
+* I am not using it in this test, but my jar contains <a href="http://j3d.org/">the Java3D</a> implementation for Perlin Noise. Its licence is in the linked header.
+* Sadly, <a href="http://java.sun.com">Java</a> is a trademark of <a href="http://www.oracle.com">Oracle</a>.
+* The source for the applet and this page are not open (yet). If you want it for any reason then drop me a line.
+
+        </div>
+
+<% end %>
