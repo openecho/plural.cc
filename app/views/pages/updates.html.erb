@@ -1,0 +1,15 @@
+<% content_for :content do %>
+h1. 20110915
+
+Added Perlin Noise Terrain (HTML5)! This is an exercise in algorithmics and playing with Perlin Noise. 
+
+h1. 20110910
+
+Added Perlin Noise Generator (HTML5) based on my implementation of 2D Perlin Noise. Play with the settings and see what intersting patterns can be generated. 
+
+h1. 20110826
+
+I have decided on a "web framework":http://en.wikipedia.org/wiki/Web_application_framework (as of the 20110826). This site is currently built using "Ruby on Rails":http://rubyonrails.org/ which has forced me to quickly pick up some "Ruby":http://www.ruby-lang.org/en/. The content markup is being done by the awesome "RedCloth":http://redcloth.org/faq textile package. "CakePHP":http://cakephp.org and "Grails":http://grails.org/ are closer than I realised to Rails making it an easy transistion. I am using "a hack based on rvm":http://dalibornasevic.com/posts/21-rvm-and-passenger-setup-for-rails-2-and-rails-3-apps to run a single instance of "Passenger":http://www.modrails.com/ in Apache and concurrently host Rails 3.0 (plural.cc) and Rails 2.11 (projects.plural.cc). The downside is that I am stuck on Ruby 1.8.7 for everything (which is currently not an issue). I can now start figuring out implementations of the various bits of functionality I desire.
+
+While I am figuring that out you can check out "JSONiJ":http://jsonij.plural.cc, do a bit of development on "Kinetic":https://github.com/openecho/Kinetic3 with me or help me figure out how I make a "game server":http://projects.plural.cc/projects/gameserver. 
+<% end %>
