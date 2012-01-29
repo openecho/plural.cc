@@ -294,12 +294,22 @@ a:hover {
 	font-weight: bold;
 }
 
+#pagebar h2 {
+	color: #638F1A;
+	/*color: #FF3800;*/
+	padding-bottom: 5px;
+	padding-left: 8px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+
 #pagebar ul { 
 	color: #00585F;
 	font-size: 13px;
 	list-style-type: square;
 	padding-left: 25px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 
 #pagebar li { 
@@ -372,6 +382,10 @@ a:hover {
 
 #content li {
 	padding-bottom: 2px;
+}
+
+code {
+	font-family: monospace;
 }
 
 #sidebar {
@@ -470,21 +484,37 @@ a:hover {
 
 div.message {
 	font-size: 12px;
-    background-image:url(../images/icon/message.png); background-position:+4px +4px; background-repeat:no-repeat;margin:0 5px;
-    border:1px solid #9a9aed;background-color:#ECECEC;padding-left:28px;padding-top:5px;padding-bottom:10px;padding-right:5px;
-    border-bottom-left-radius: 4px 4px;border-bottom-right-radius: 4px 4px;border-top-left-radius: 4px 4px;border-top-right-radius: 4px 4px;-moz-border-radius:4px 4px 4px 4px;
+	background-image:url(../images/icon/message.png); background-position:+4px +4px; background-repeat:no-repeat;margin:0 5px;
+	border:1px solid #9a9aed;background-color:#ECECEC;padding-left:28px;padding-top:5px;padding-bottom:10px;padding-right:5px;
+	border-bottom-left-radius: 4px 4px;border-bottom-right-radius: 4px 4px;border-top-left-radius: 4px 4px;border-top-right-radius: 4px 4px;-moz-border-radius:4px 4px 4px 4px;
 }
 
 div.info {
 	font-size: 12px;
-    background-image:url(../images/icon/puzzle.png); background-position:+4px +4px; background-repeat:no-repeat;
-    border:1px solid #c1d0b9;background-color:#ECECEC;padding-left:28px;padding-top:5px;padding-bottom:10px;padding-right:5px;
-    border-bottom-left-radius: 4px 4px;border-bottom-right-radius: 4px 4px;border-top-left-radius: 4px 4px;border-top-right-radius: 4px 4px;-moz-border-radius:4px 4px 4px 4px;
+	background-image:url(../images/icon/puzzle.png); background-position:+4px +4px; background-repeat:no-repeat;
+	border:1px solid #c1d0b9;background-color:#ECECEC;padding-left:28px;padding-top:5px;padding-bottom:10px;padding-right:5px;
+	border-bottom-left-radius: 4px 4px;border-bottom-right-radius: 4px 4px;border-top-left-radius: 4px 4px;border-top-right-radius: 4px 4px;-moz-border-radius:4px 4px 4px 4px;
 }
 
 div.errors {
 	font-size: 12px;
-    background-image:url(../images/icon/exclamation.png); background-position:+4px +4px; background-repeat:no-repeat;margin:0 5px;
-    border:1px solid #cd6b6b;background-color:#ECECEC;padding-left:28px;padding-top:5px;padding-bottom:10px;padding-right:5px;
-    border-bottom-left-radius: 4px 4px;border-bottom-right-radius: 4px 4px;border-top-left-radius: 4px 4px;border-top-right-radius: 4px 4px;-moz-border-radius:4px 4px 4px 4px;
+	background-image:url(../images/icon/exclamation.png); background-position:+4px +4px; background-repeat:no-repeat;margin:0 5px;
+	border:1px solid #cd6b6b;background-color:#ECECEC;padding-left:28px;padding-top:5px;padding-bottom:10px;padding-right:5px;
+	border-bottom-left-radius: 4px 4px;border-bottom-right-radius: 4px 4px;border-top-left-radius: 4px 4px;border-top-right-radius: 4px 4px;-moz-border-radius:4px 4px 4px 4px;
+}
+
+div.info p {
+	margin-right: 25px;
+}
+
+div.info pre {
+	padding: 6px 0;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	background-color: #223209;
+}
+
+div.info code {
+	color: #fff;
+	margin: 5px 2px;
 }
