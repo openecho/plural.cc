@@ -7,15 +7,17 @@ h1. Meet plural.cc
 
 "plural.cc":http://plural.cc is the ongoing effort to create a single and managed location to host projects (specifically my projects). This site hosts my source code, run instances of my projects and can provide hosting for your work if its roughly inline with my interests.
 
-h1. Whats New? 20120129
+h1. Whats New? 20120220
 
-Mozaic the tile engine is moving very fast right now. Its scheduler is completed and you can see a rendering test based on scheduled tasks "here":/pages/mozaic001.html. I am very happy with how its performing and quite interested in progressing it for the moment.
+You can now find a release of my second mozic test. This guy shows how the portal to a tile based world can work and shows how a bouncing ball can be the focus that manages where the portal should be "looking". I have so far implemented a focus behavior (the way the portal and point of interest) that centers on the focus unless its near the edge of the screen where it will go all the way to the edge. Other models are possible. 
 
-p=. !/images/site/mozaic001.png!:/pages/mozaic001.html
+p=. !/images/site/mozaic002.png!:/pages/mozaic002.html
 
-I am also very pleased to announce you can check out the source code for "Mozaic":https://bitbucket.org/jmarsden/mozaic/src! (no pun intended). The source should remain open from now on - I have added the licences I needed to and I have got over the fact the code is not so clean. Let me know if you find any of it interesting.
+The only known issue is that the game loop changes speed based on the time it takes to render the back buffer and display it. This should not be happening and its an annoying bug. I have decided to park it for now or I will get nowhere. Also, I am going to implement a lwjgl canvas to hopefully supercharge the rendering.
 
-"Onwards, and upwards":/pages/mozaic002.html.
+Anyway, for now you can check out the source "Mozaic":https://bitbucket.org/jmarsden/mozaic/src! and as always let me know if you find any of it interesting.
+
+"To infinity and beyond!":/pages/mozaic003.html
 
 *P.S. You and find the "old-new stuff":/pages/updates here.*
 

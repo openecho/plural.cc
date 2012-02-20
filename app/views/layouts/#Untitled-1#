@@ -1,0 +1,10 @@
+Portal portal = state.portal;
+PortalSnapshot snapshot = new PortalSnapshot();
+
+portal.viewWorld(snapshot);
+graphics.setColor(Color.BLACK);
+graphics.fillRect(0, 0, manager.getGraphicsWidth(), manager.getGraphicsHeight());
+
+for(PortalPlacement placement: snapshot.portalPlacements) {
+    graphics.drawImage(placement.tile.getTileImage(), (int) placement.portalX, (int) placement.portalY, null);
+}
